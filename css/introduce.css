@@ -1,0 +1,86 @@
+.container {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+.container .cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container .cont .left_side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../img/about_img.jpg);
+}
+.container .cont .right_side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+.container .cont .right_side .info {
+    text-align: center;
+    color: #271509;
+    padding-top: 20px;
+}
+.container .cont .right_side .info h2 {
+    padding: 30px 0;
+}
+.container .cont .right_side .info .text_title {
+    padding: 40px 0;   
+}
+.container .cont .right_side .info .text_title > div {
+    padding: 20px 0;
+}
+.container .cont .right_side .info .text_title > div h3 {
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+.container .cont .right_side .info .text_title > div h4 {
+    font-weight: normal;
+}
+.container .cont .right_side .info .text_cont {
+    padding: 15px 0;
+}
+.container .cont .right_side .info .text_cont ul li {
+    padding-bottom: 7px;
+}
+
+.container .cont .right_side .info button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: #271509;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+.container .cont .right_side .info p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+@media (max-width: 991px) {
+    .container .cont .left_side {
+        position: static;
+        width: 100%;
+        height: 400px;
+
+    }
+    .container .cont .right_side {
+        position: static;
+        width: 100%;
+        height: auto;
+
+    }
+}

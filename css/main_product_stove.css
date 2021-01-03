@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+section {
+    flex: 1;
+}
+header,
+section,
+aside,
+article,
+main,
+nav,
+footer {
+    display: block;
+}
+header:after,
+section:after,
+aside:after,
+article:after,
+main:after,
+nav:after,
+footer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container_stove {
+    width: 100%;
+    height: 450px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.swiper-scrollbar {
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-scrollbar-drag {
+    background:rgb(209, 148, 35);
+}
+#container_stove .pd_wrap {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+#container_stove .pd_wrap h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+#container_stove .pd_wrap .slide_wrap {
+    width: 300%;
+    height: 100%;
+}
+#container_stove .pd_wrap .slide_wrap .cont_wrap {
+    width: calc(100% / 3 / 5);
+    height: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+#container_stove .pd_wrap .slide_wrap .cont_wrap .pd_img {
+    width: 100%;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+#container_stove .pd_wrap .slide_wrap .cont_wrap .pd_info {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    color: #271509;
+}
+#container_stove .pd_wrap .slide_wrap .cont_wrap .pd_info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#container_stove .pd_wrap .slide_wrap .cont_wrap .pd_info p:nth-child(1) {
+    font-size: 14px;
+}
+#container_stove .pd_wrap .slide_wrap .cont_wrap .pd_info p {
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 30px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-next {
+    right: 30px;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: rgb(209, 148, 35);
+    outline: none;
+}

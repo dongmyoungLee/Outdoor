@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+
+/* 게시판 공통 */
+#board_box {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+#board_box h2 {
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#board_box .buttons {
+    padding: 20px 0;
+    text-align: right;
+    font-size: 0;
+}
+#board_box .buttons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+#board_box .buttons li button {
+    padding: 20px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #271509;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+/*게시판 작성(board_form.php)*/
+#board_box #board_form {
+    border-bottom: 1px solid #ccc;
+}
+#board_box #board_form li {
+    padding: 10px 0;
+    font-size: 0;
+}
+#board_box #board_form li > div {
+    display: inline-block;
+    font-size: 14px;
+    color: #777;
+    vertical-align: top;
+    padding: 0 10px;
+}
+#board_box #board_form li > div.label {
+    width: 160px;
+}
+#board_box #board_form li > div.label label {
+    width: 100%;
+    line-height: 36px;
+    font-weight: bold;
+}
+#board_box #board_form li > div.input {
+    width: calc(100% - 160px);
+    position: relative;
+}
+#board_box #board_form li > div.input input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#board_box #board_form li > div.input p {
+    line-height: 36px;
+}
+#board_box #board_form li > div.input textarea {
+    width: 100%;
+    height: 360px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 0;
+}
+#board_box #board_form li > div.input input[type='file'] {
+    outline: none;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 7px;
+}
+.button_admin {
+    text-align: right;
+}
+.button_admin #admin_btn {
+    width: 70px;
+    height: 40px;
+    border: none;
+    background: #271509;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* #board_box #board_form li > div.input .origin_file {
+    position: absolute;
+    top: 0px;
+
+} */
+
+/* 게시판 리스트 */
+
+#board_list {
+    border-bottom: 1px solid #ccc;
+}
+#board_list li {
+    padding: 10px 0;
+    font-size: 0;
+}
+#board_list li span {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 5px;
+    color: #777;
+}
+#board_list li span.field_1 {
+    width: 60px;
+}
+#board_list li span.field_2 {
+    width: calc(100% - 460px);
+}
+#board_list li span.field_3 {
+    width: 80px;
+}
+#board_list li span.field_4 {
+    width: 80px;
+}
+#board_list li span.field_5 {
+    width: 180px;
+}
+#board_list li span.field_6 {
+    width: 60px;
+}
+#board_list li span a {
+    color: #777;
+}
+#board_list li span a:hover {
+    color: #333;
+}
+#board_list li:first-child {
+    border-bottom: 1px solid #222;
+}
+#board_list li:first-child span {
+    font-weight: bold;
+    color: #555;
+}
+#board_list li:nth-child(even) {
+    background-color: #edefed;
+}
+#board_list li.notice span {
+    font-weight: bold;
+}
+#board_list li.notice span:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+#page_num {
+    padding: 20px 0;
+    font-size: 0;
+    text-align: center;
+}
+#page_num li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+#page_num li a {
+    display: block;
+    color: #777;
+}
+#page_num li .cur_page {
+    font-size: 14px;
+    color: #271509;
+}
+#page_num li:hover a {
+    color: #271509;
+}
+
+/* 게시판 상세보기 (board_view.php) */
+
+
+#view_content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+#view_content li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#view_content li span:first-child {
+    float: left;
+}
+#view_content li span:last-child {
+    float: right;
+}
+#view_content li p {
+    padding-top: 10px;
+}
+#view_content li a {
+    color: #777;
+}
+#view_content li a:hover {
+    color: #21bda1;
+}
+
+@media (max-width: 991px) {
+    #board_box {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #board_list li span {
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 5px;
+        color: #777;
+    }
+    #board_list li span.field_1 {
+        width: 60px;
+    }
+    #board_list li span.field_2 {
+        width: calc(100% - 160px);
+    }
+    #board_list li span.field_3 {
+        width: 100px;
+    }
+    #board_list li span.field_4 {
+        width: 80px;
+        display: none;
+    }
+    #board_list li span.field_5 {
+        width: 180px;
+        display: none;
+    }
+    #board_list li span.field_6 {
+        width: 60px;
+        display: none;
+    }
+}
